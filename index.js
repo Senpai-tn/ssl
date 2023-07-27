@@ -10,4 +10,6 @@ http
   .createServer(options, (req, res) => {
     res.end('SSL')
   })
-  .listen(8520)
+  .listen(8520, () => {
+    console.log('ssl')
+  })
